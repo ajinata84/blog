@@ -1,6 +1,6 @@
 # DJI's Blog
 
-[Visit Here!](https://ajinata84.github.io/blog/)
+[Visit Here! (its not working tho)](https://ajinata84.github.io/blog/)
 
 A blog created for my curhatan
 
