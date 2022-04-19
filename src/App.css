@@ -4,6 +4,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Sansita";
+  src: url("../src/assets/fonts/Sansita-Bold.ttf");
+  font-style: normal;
+}
+
 .selection-image {
   object-fit: cover;
   height: 200px;
@@ -17,8 +23,9 @@
 }
 
 .blog-title {
-  font-family: "Cormorant Unicase";
+  font-family: "Sansita";
   font-size: 64px;
+  margin-top: 20px;
 }
 .sitename {
   display: inline-block;
@@ -51,10 +58,11 @@
   .blog-title {
     margin-top: 30px;
     font-size: 2rem;
+    margin-top: 15px;
   }
   .selection-card:hover .selection-image{
-    height: auto;
-    width: auto;
+    height: 100px;
+    width: 100px;
   }
   .selection-image {
     justify-self: center;

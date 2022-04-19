@@ -1,22 +1,17 @@
 import React from "react";
-import {
-  Container,
-  Box,
-  Text,
-  Stack,
-  Heading,
-  Image,
-  useColorMode,
-} from "@chakra-ui/react";
+import { Container, Text, Stack, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
-export default function SelectionCard({ id }) {
-  const { colorMode } = useColorMode();
-
+export default function SelectionCard({
+  id,
+  title,
+  imgUrl,
+  subheading,
+  author,
+  date,
+}) {
   const transition = { transition: { duration: 0.3, type: "linear" } };
-
-  const bgColor = colorMode === "light" ? "white" : "#1A202C";
 
   return (
     <motion.div
@@ -36,25 +31,27 @@ export default function SelectionCard({ id }) {
         maxW="100%"
         bg={{ base: undefined, md: undefined }}
       >
-        <NavLink to={`/1`}>
+        <NavLink to={`/${id}`}>
           <Stack
             paddingY={{ base: "0px", md: "0px" }}
             direction={{ base: "row", md: "row" }}
             justifyContent={{ base: "start", md: "start" }}
           >
-            <Image
-              className="selection-image"
-              src="https://cdn-image.hipwee.com/wp-content/uploads/2015/06/228140528_Soeharto-smoking-cigar-at-home.jpg"
-            />
+            <Image className="selection-image" src={imgUrl} />
             <Stack
               direction={"column"}
               justifyContent="center"
-              width={"100%"}
+              width={"60%"}
               paddingLeft={{ md: "40px" }}
-              alignItems={{ base: "center", md: "start" }}
+              alignItems={{ base: "start", md: "start" }}
             >
-              <Text fontSize={{ base: 20, md: 30 }} fontWeight={500}>
-                Afakh Btul??
+              <Text
+                fontSize={{ base: 20, md: 30 }}
+                fontWeight={500}
+                noOfLines={2}
+                textOverflow="ellipsis"
+              >
+                {title}
               </Text>
               <Text
                 className="subheading"
@@ -63,10 +60,10 @@ export default function SelectionCard({ id }) {
                 textOverflow="ellipsis"
                 noOfLines={2}
               >
-                Kalau Soeharto itu adalah presiden yang sangat baik
+                {subheading}
               </Text>
-              <Text fontSize={12} fontWeight={400}>
-                Ajinata, 2020/10/19
+              <Text fontSize={12} fontWeight={400} textAlign="start">
+                {author}, {date}
               </Text>
             </Stack>
           </Stack>

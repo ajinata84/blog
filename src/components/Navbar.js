@@ -59,7 +59,7 @@ export default function Navbar() {
         <Flex align="center" mr={5}>
           <Heading as="h1" size="md" letterSpacing="tighter">
             <NavLink to={""}>
-              <i>DJi's Blog</i>
+              <i>DJi</i>
             </NavLink>
           </Heading>
         </Flex>

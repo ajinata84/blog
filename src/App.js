@@ -2,7 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { Container, useColorMode, Box, Center } from "@chakra-ui/react";
+import { Container, useColorMode, Box } from "@chakra-ui/react";
 import Home from "./pages/Home";
 import BlogPage from "./pages/BlogPage";
 

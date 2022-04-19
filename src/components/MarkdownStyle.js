@@ -198,8 +198,9 @@ const MyStyle = styled.div`
     text-align: left;
   }
 
-  ul {
-    padding-left: 20px;
+  ul,
+  ol {
+    padding-left: 40px;
   }
 
   ul,
