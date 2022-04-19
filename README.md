@@ -5,9 +5,9 @@
 A blog created for my curhatan
 
 Created with React, Framer Motion, Chakra UI.
+API is created with NodeJS, Express, FaunaDB, and AWS
 
 # WIP
 
-- Backend
-- Github page
-- i dont have any data yet btw
+- maybe more nice looking page?
+
