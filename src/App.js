@@ -29,28 +29,25 @@ function App() {
             position={"fixed"}
             zIndex={-1}
             height={"1000vh"}
-            maxW={{ base: undefined, md: "70%" }}
+            maxW={{ base: undefined, md: "50%" }}
             background={colorMode === "light" ? "#F6F6F6" : "#273247"}
           />
         </motion.div>
-        <Center>
-          <Container
-            p={"5px"}
-            margin={{ base: "5px", md: "40px" }}
-            maxW={{ base: "90vw", md: "60vw" }}
-            justifyContent="center"
-            display="flex"
-            flexDirection={"column"}
-            overflowWrap={"break-word"}
-          >
-            <AnimatePresence exitBeforeEnter>
-              <Routes location={location} key={location.pathname}>
-                <Route path="" element={<Home />} />
-                <Route path="/:id" element={<BlogPage />} />
-              </Routes>
-            </AnimatePresence>
-          </Container>
-        </Center>
+        <Container
+          p={"5px"}
+          margin={{ base: "0 auto", md: "0 auto" }}
+          maxW={{ base: "90vw", md: "40vw" }}
+          justifyContent="center"
+          display="flex"
+          flexDirection={"column"}
+        >
+          <AnimatePresence exitBeforeEnter>
+            <Routes location={location} key={location.pathname}>
+              <Route path="" element={<Home />} />
+              <Route path="/:id" element={<BlogPage />} />
+            </Routes>
+          </AnimatePresence>
+        </Container>
       </AnimatePresence>
     </>
   );

@@ -44,6 +44,7 @@ export default function Navbar() {
       position={"fixed"}
       as="nav"
       w="100%"
+      zIndex={999}
       bg={useColorModeValue("#ffffff40", "#20202380")}
       css={{ backdropFilter: "blur(10px)" }}
     >

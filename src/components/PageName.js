@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
-import { Box, Stack, Container } from "@chakra-ui/react";
+import { Box, Stack, Container, Text } from "@chakra-ui/react";
 
 import React from "react";
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
+
+const transition2 = { transition: { duration: 0.3, type: "linear" } };
 
 export default function PageName() {
   return (
@@ -145,6 +147,17 @@ export default function PageName() {
           </motion.span>
         </Box>
       </Stack>
+      <motion.div
+        initial={{ y: 10, opacity: 0 }}
+        animate={{
+          y: 0,
+          opacity: 1,
+          ...transition2,
+        }}
+        exit={{ y: 10, opacity: 0, ...transition2 }}
+      >
+        <Text my={"40px"}>ajinata's personal blog</Text>
+      </motion.div>
     </Container>
   );
 }

@@ -13,6 +13,8 @@ import rehypeKatex from "rehype-katex";
 import "katex/dist/katex.min.css";
 
 export default function BlogPage() {
+  const transition = { transition: { duration: 0.3, type: "linear" } };
+
   const file_name = "dummydata.md";
   const [post, setPost] = useState("");
 
@@ -35,9 +37,9 @@ export default function BlogPage() {
       animate={{
         y: 0,
         opacity: 1,
-        transition: { duration: 1, type: "linear" },
+        ...transition,
       }}
-      exit={{ y: 300, opacity: 0 }}
+      exit={{ y: 300, opacity: 0, ...transition }}
     >
       <BlogTitle
         title={"Lorem Ipsum Dolor Sit Amet Consectetur"}

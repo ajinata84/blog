@@ -4,6 +4,18 @@
   font-style: normal;
 }
 
+.selection-image {
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+  transition: 200ms;
+}
+
+.selection-card:hover .selection-image{
+  height: 200px;
+  width: 300px;
+}
+
 .blog-title {
   font-family: "Cormorant Unicase";
   font-size: 64px;
@@ -33,9 +45,23 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .subheading {
+    display: none !important; 
+  }
   .blog-title {
     margin-top: 30px;
     font-size: 2rem;
+  }
+  .selection-card:hover .selection-image{
+    height: auto;
+    width: auto;
+  }
+  .selection-image {
+    justify-self: center;
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    transition: 200ms;
   }
   .sitename {
     font-size: 64px;
