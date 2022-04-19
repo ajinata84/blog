@@ -1,4 +1,3 @@
-const baseUrl =
-  "http://aji-blog-api.eba-7mv8x5aw.ap-southeast-1.elasticbeanstalk.com/api";
+const baseUrl = "https://fierce-shelf-83368.herokuapp.com/api";
 
 export { baseUrl };
