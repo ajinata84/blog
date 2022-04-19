@@ -5,7 +5,7 @@
 A blog created for my curhatan
 
 Created with React, Framer Motion, Chakra UI, Katex,Remark/Rehype.
-API is created with NodeJS, Express, FaunaDB, and AWS
+API is created with NodeJS, Express, FaunaDB, and Heroku
 
 # WIP
 
