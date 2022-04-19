@@ -9,5 +9,7 @@ API is created with NodeJS, Express, FaunaDB, and Heroku
 
 # WIP
 
-- maybe more nice looking page?
+- uhh
+- search section
+- idk you ask me
 
