@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/blog/static/css/main.c505d248.css",
-    "main.js": "/blog/static/js/main.fd1a098c.js",
+    "main.js": "/blog/static/js/main.5427f953.js",
     "static/js/787.a70a4682.chunk.js": "/blog/static/js/787.a70a4682.chunk.js",
     "static/media/CormorantUnicase-Bold.ttf": "/blog/static/media/CormorantUnicase-Bold.c6f678f475be23ee971e.ttf",
     "static/media/Sansita-Bold.ttf": "/blog/static/media/Sansita-Bold.abb067a9a5648e237209.ttf",
@@ -67,11 +67,11 @@
     "static/media/KaTeX_Size3-Regular.woff2": "/blog/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/blog/index.html",
     "main.c505d248.css.map": "/blog/static/css/main.c505d248.css.map",
-    "main.fd1a098c.js.map": "/blog/static/js/main.fd1a098c.js.map",
+    "main.5427f953.js.map": "/blog/static/js/main.5427f953.js.map",
     "787.a70a4682.chunk.js.map": "/blog/static/js/787.a70a4682.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c505d248.css",
-    "static/js/main.fd1a098c.js"
+    "static/js/main.5427f953.js"
   ]
 }
