@@ -35,14 +35,14 @@ export default function SelectionCard({
           <Stack
             paddingY={{ base: "0px", md: "0px" }}
             direction={{ base: "row", md: "row" }}
-            justifyContent={{ base: "space-evenly", md: "start" }}
+            justifyContent={{ base: "start", md: "start" }}
           >
             <Image className="selection-image" src={imgUrl} />
             <Stack
               direction={"column"}
               justifyContent="center"
               width={"60%"}
-              paddingLeft={{ md: "40px" }}
+              paddingLeft={"3vw"}
               alignItems={{ base: "start", md: "start" }}
             >
               <Text

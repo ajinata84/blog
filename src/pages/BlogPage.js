@@ -99,7 +99,7 @@ const BlogTitle = ({ title = "title", author = "author", date = "date" }) => {
     <div style={{ marginBottom: "10px", textAlign: "center" }}>
       <h1 className="blog-title">{title}</h1>
 
-      <Text textAlign={"start"}>{`${author}, ${date}`}</Text>
+      <Text textAlign={"center"}>{`${author}, ${date}`}</Text>
     </div>
   );
 };

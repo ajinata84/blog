@@ -45,9 +45,6 @@
   font-weight: 400;
   font-size: 64px;
   font-family: "Cormorant Unicase";
-  @media (max-width: 1440px) {
-    font-size: 1px;
-  }
 }
 
 .first {
