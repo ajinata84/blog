@@ -10,17 +10,20 @@
   font-style: normal;
 }
 
+
 .selection-image {
   object-fit: cover;
   height: 200px;
-  width: 200px;
+  width: 30%;
   transition: 200ms;
 }
 
 .selection-card:hover .selection-image{
   height: 200px;
-  width: 300px;
+  width: 40%;
 }
+
+
 
 .blog-title {
   font-family: "Sansita";
@@ -49,6 +52,14 @@
 
 .first {
   margin-right: 10px;
+}
+
+.selection-text .subheading{
+  text-overflow: ellipsis;
+}
+
+.selection-card:hover .selection-text .subheading{
+  text-overflow: clip;
 }
 
 @media only screen and (max-width: 768px) {

@@ -183,6 +183,10 @@ const MyStyle = styled.div`
     color: #2980b9;
   }
 
+  iframe {
+    width: 100%;
+  }
+
   pre {
     border-radius: 3px;
     margin-bottom: 5px;

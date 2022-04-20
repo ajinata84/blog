@@ -12,8 +12,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import MyStyle from "../components/MarkdownStyle";
 
 import remarkGfm from "remark-gfm";
-import rehypeKatex from "rehype-katex";
-import "katex/dist/katex.min.css";
+import rehypeRaw from "rehype-raw";
 
 export default function BlogPage() {
   const currentParam = useParams();
@@ -68,7 +67,7 @@ export default function BlogPage() {
             <ReactMarkdown
               children={post}
               remarkPlugins={remarkGfm}
-              rehypePlugins={rehypeKatex}
+              rehypePlugins={rehypeRaw}
               components={{
                 code({ node, inline, className, children, ...props }) {
                   const match = /language-(\w+)/.exec(className || "");

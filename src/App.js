@@ -29,14 +29,14 @@ function App() {
             position={"fixed"}
             zIndex={-1}
             height={"1000vh"}
-            maxW={{ base: undefined, md: "50%" }}
+            maxW={{ base: undefined, md: "950px" }}
             background={colorMode === "light" ? "#F6F6F6" : "#273247"}
           />
         </motion.div>
         <Container
           p={"5px"}
           margin={{ base: "0 auto", md: "0 auto" }}
-          maxW={{ base: "90vw", md: "40vw" }}
+          maxW={{ base: "90vw", md: "800px" }}
           justifyContent="center"
           display="flex"
           flexDirection={"column"}

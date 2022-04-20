@@ -35,7 +35,7 @@ export default function SelectionCard({
           <Stack
             paddingY={{ base: "0px", md: "0px" }}
             direction={{ base: "row", md: "row" }}
-            justifyContent={{ base: "start", md: "start" }}
+            justifyContent={{ base: "space-evenly", md: "start" }}
           >
             <Image className="selection-image" src={imgUrl} />
             <Stack
@@ -46,10 +46,10 @@ export default function SelectionCard({
               alignItems={{ base: "start", md: "start" }}
             >
               <Text
+                className="selection-text"
                 fontSize={{ base: 20, md: 30 }}
                 fontWeight={500}
                 noOfLines={2}
-                textOverflow="ellipsis"
               >
                 {title}
               </Text>
@@ -57,7 +57,6 @@ export default function SelectionCard({
                 className="subheading"
                 fontSize={18}
                 fontWeight={400}
-                textOverflow="ellipsis"
                 noOfLines={2}
               >
                 {subheading}
