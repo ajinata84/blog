@@ -11,6 +11,6 @@ API is created with NodeJS, Express, FaunaDB, and Heroku
 # WIP
 
 - uhh
-- search section
+- idk
 - idk you ask me
 
