@@ -4,13 +4,13 @@
 
 A blog created for my curhatan
 
-Created with React, Framer Motion, Chakra UI, Katex, Remark/Rehype.
+Created with React, Framer Motion, Chakra UI, Styled Components.
 
 API is created with NodeJS, Express, FaunaDB, and Heroku
 
-# WIP
+# To-Dos
 
-- uhh
-- maybe tags?
-- idk you ask me
+- SEO
+- Tags
+- fixing the content styling
 
