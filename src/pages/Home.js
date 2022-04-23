@@ -19,13 +19,14 @@ import { SearchIcon } from "@chakra-ui/icons";
 const transition = { transition: { duration: 0.3, type: "linear" } };
 
 export default function Home() {
-  const url = `${baseUrl}`;
+  const url = `${baseUrl}/posts`;
   const [postsData, setPostsData] = useState([]);
   const [permData, setPermData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     axios
       .get(url)
       .then((res) => {
@@ -75,12 +76,13 @@ export default function Home() {
           }}
           exit={{ y: 80, opacity: 0, ...transition }}
         >
-          <FormControl maxW={{ base: "100%", md: "60%" }} paddingX="16px">
-            <FormLabel>Search</FormLabel>
-            <InputGroup>
+          <FormControl paddingX="16px">
+            <FormLabel>Search blog</FormLabel>
+            <InputGroup mb={4} maxW={{ base: "100%", md: "60%" }}>
               <InputLeftElement children={<SearchIcon />} />
               <Input onChange={handleChange} value={searchText} />
             </InputGroup>
+            <hr />
           </FormControl>
         </motion.div>
         {postsData.map((data) => {

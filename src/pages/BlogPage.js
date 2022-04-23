@@ -3,7 +3,7 @@ import { Container, Text, Spinner, Center } from "@chakra-ui/react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { baseUrl } from "../config";
-import ScrollToTop from "../components/ScrollToTop";
+import CommentsSection from "../components/CommentsSection";
 
 import { motion } from "framer-motion";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
@@ -17,14 +17,15 @@ import rehypeRaw from "rehype-raw";
 
 export default function BlogPage() {
   const currentParam = useParams();
+  const url = `${baseUrl}/posts/${currentParam.id}`;
   const transition = { transition: { duration: 0.3, type: "linear" } };
 
   const [apiData, setApiData] = useState({});
   const [post, setPost] = useState("");
-  const url = `${baseUrl}/${currentParam.id}`;
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     axios
       .get(url)
       .then((res) => {
@@ -44,7 +45,6 @@ export default function BlogPage() {
   } else {
     return (
       <>
-        <ScrollToTop />
         <motion.div
           initial={{ y: 80, opacity: 0 }}
           animate={{
@@ -69,8 +69,8 @@ export default function BlogPage() {
             >
               <ReactMarkdown
                 children={post}
-                remarkPlugins={remarkGfm}
-                rehypePlugins={rehypeRaw}
+                remarkPlugins={[remarkGfm]}
+                rehypePlugins={[rehypeRaw]}
                 components={{
                   code({ node, inline, className, children, ...props }) {
                     const match = /language-(\w+)/.exec(className || "");
@@ -90,6 +90,7 @@ export default function BlogPage() {
                   },
                 }}
               />
+              <CommentsSection />
             </Container>
           </MyStyle>
         </motion.div>
@@ -102,7 +103,6 @@ const BlogTitle = ({ title = "title", author = "author", date = "date" }) => {
   return (
     <div style={{ marginBottom: "30px", textAlign: "center" }}>
       <h1 className="blog-title">{title}</h1>
-
       <Text textAlign={"center"}>{`${author}, ${date}`}</Text>
     </div>
   );
