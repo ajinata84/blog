@@ -8,6 +8,7 @@
   
 
 A blog created for my curhatan.
+
 blog is formatted from markdown data to make writing EZ
 
   
