@@ -22,8 +22,9 @@ API is created with NodeJS, Express, FaunaDB, and Heroku
 # To-Dos
 
  - [x] blog search
- - [x] more nice looking page
+ - [x] nicer looking page
  - [x] comment section
  - [ ] search by tags
  - [ ] SEO optimization
  - [ ] idk you ask me
+ - [ ] optimized code (important but im kinda lazy)
