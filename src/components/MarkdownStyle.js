@@ -195,16 +195,20 @@ const MyStyle = styled.div`
   }
 
   blockquote {
-    margin: 0;
+    margin-bottom: 0.7em;
     border-left: 5px solid #7a7a7a;
     font-style: italic;
-    padding: 1.33em;
+    padding: 1em;
     text-align: left;
+    p {
+      margin: 0 auto;
+    }
   }
 
   ul,
   ol {
     padding-left: 40px;
+    margin-bottom: 1em;
   }
 
   ul,
