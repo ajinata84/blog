@@ -29,5 +29,5 @@ API is created with NodeJS, Express, FaunaDB, and Heroku
  - [ ] search by tags
  - [ ] SEO optimization
  - [ ] NextJS App ( target for next month, also for SEO and personal experiment )
- - [ ] idk you ask me
+ - [ ] or GatsbyJS migration
  - [ ] optimized code (important but im kinda lazy)
