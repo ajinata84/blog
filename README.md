@@ -28,5 +28,6 @@ API is created with NodeJS, Express, FaunaDB, and Heroku
  - [x] comment section
  - [ ] search by tags
  - [ ] SEO optimization
+ - [ ] NextJS App ( also for SEO and personal experiment )
  - [ ] idk you ask me
  - [ ] optimized code (important but im kinda lazy)
