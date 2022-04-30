@@ -7,7 +7,9 @@
 
   
 
-A blog created for my curhatan
+A blog created for my curhatan.
+
+blog is formatted from markdown data to make writing EZ
 
   
 
@@ -22,8 +24,10 @@ API is created with NodeJS, Express, FaunaDB, and Heroku
 # To-Dos
 
  - [x] blog search
- - [x] more nice looking page
+ - [x] nicer looking page
  - [x] comment section
  - [ ] search by tags
  - [ ] SEO optimization
- - [ ] idk you ask me
+ - [ ] NextJS App ( target for next month, also for SEO and personal experiment )
+ - [ ] or GatsbyJS migration
+ - [ ] optimized code (important but im kinda lazy)
