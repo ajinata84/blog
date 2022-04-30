@@ -3,7 +3,7 @@ import PageName from "../components/PageName";
 import SelectionCard from "../components/SelectionCard";
 import axios from "axios";
 import { motion } from "framer-motion";
-import { baseUrl } from "../config";
+import { baseUrl } from "../constants";
 import {
   Center,
   Spinner,
@@ -76,7 +76,7 @@ export default function Home() {
           }}
           exit={{ y: 80, opacity: 0, ...transition }}
         >
-          <FormControl paddingX="16px">
+          <FormControl>
             <FormLabel>Search blog</FormLabel>
             <InputGroup mb={4} maxW={{ base: "100%", md: "60%" }}>
               <InputLeftElement children={<SearchIcon />} />

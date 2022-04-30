@@ -14,7 +14,7 @@ import {
 import { Formik, Form, Field } from "formik";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { baseUrl } from "../config";
+import { baseUrl } from "../constants";
 import { motion } from "framer-motion";
 
 const endpoint = `${baseUrl}/comments`;
@@ -38,6 +38,7 @@ export default function CommentsSection() {
         setLoading(false);
       })
       .catch((err) => console.log(err));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [refresh]);
 
   if (loading) {
@@ -58,8 +59,9 @@ export default function CommentsSection() {
           Komentar
         </Heading>
         {comments.length === 0 ? <h5>Masih Belum ada komentar!</h5> : <span />}
-        {comments.map((comment) => (
+        {comments.map((comment, index) => (
           <motion.div
+            key={index}
             style={{ marginBottom: "10px" }}
             initial={{ y: 80, opacity: 0 }}
             animate={{

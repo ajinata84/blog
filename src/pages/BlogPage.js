@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Container, Text, Spinner, Center } from "@chakra-ui/react";
+
 import axios from "axios";
-import { useParams } from "react-router-dom";
-import { baseUrl } from "../config";
 import CommentsSection from "../components/CommentsSection";
+
+import { Container, Text, Spinner, Center } from "@chakra-ui/react";
+import { useParams } from "react-router-dom";
+import { baseUrl } from "../constants";
 
 import { motion } from "framer-motion";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
@@ -34,6 +36,7 @@ export default function BlogPage() {
         setLoading(false);
       })
       .catch((err) => console.log(err));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (loading) {
@@ -101,9 +104,9 @@ export default function BlogPage() {
 
 const BlogTitle = ({ title = "title", author = "author", date = "date" }) => {
   return (
-    <div style={{ marginBottom: "30px", textAlign: "center" }}>
+    <div style={{ marginBottom: "30px" }}>
       <h1 className="blog-title">{title}</h1>
-      <Text textAlign={"center"}>{`${author}, ${date}`}</Text>
+      <Text>{`${author}, ${date}`}</Text>
     </div>
   );
 };

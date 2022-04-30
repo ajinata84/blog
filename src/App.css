@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  font-family: "Sansita";
-  src: url("../src/assets/fonts/Sansita-Bold.ttf");
+  font-family: "Roboto Condensed";
+  src: url("../src/assets/fonts/RobotoCondensed-Regular.ttf");
   font-style: normal;
 }
 
@@ -26,7 +26,8 @@
 
 
 .blog-title {
-  font-family: "Sansita";
+  font-family: "Roboto Condensed";
+  font-weight: 600;
   font-size: 64px;
   margin-top: 20px;
 }

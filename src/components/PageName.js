@@ -10,6 +10,7 @@ const transition2 = { transition: { duration: 0.3, type: "linear" } };
 export default function PageName() {
   return (
     <Container
+      p={0}
       my="23px"
       flex={1}
       maxW="100%"

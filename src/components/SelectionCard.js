@@ -24,10 +24,10 @@ export default function SelectionCard({
       exit={{ y: 80, opacity: 0, ...transition }}
     >
       <Container
+        p={0}
         className="selection-card"
-        marginY={"10px"}
+        marginY={"30px"}
         borderRadius={{ base: "0px", md: "3px" }}
-        margin={"20px auto"}
         maxW="100%"
         bg={{ base: undefined, md: undefined }}
       >
