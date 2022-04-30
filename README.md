@@ -30,4 +30,4 @@ API is created with NodeJS, Express, FaunaDB, and Heroku
  - [ ] SEO optimization
  - [ ] NextJS App ( target for next month, also for SEO and personal experiment )
  - [ ] or GatsbyJS migration
- - [ ] optimized code (important but im kinda lazy)
+ - [ ] optimized code (important but im kinda lazy) [30 apr, cleaned some messy code]
